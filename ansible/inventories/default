@@ -1,0 +1,13 @@
+
+[role_haproxy]
+server0
+
+[role_wordpress]
+server1
+server2
+
+[role_mariadb]
+server3
+
+[role_nfs]
+server4
