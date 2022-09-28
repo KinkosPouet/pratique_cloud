@@ -18,6 +18,7 @@ apt-get update --allow-releaseinfo-change
 apt-get install -y \
     apt-transport-https \
     ca-certificates \
+	git	\
     curl \
     wget \
     vim \
@@ -37,5 +38,9 @@ apt-get install -y \
  su - $USER -c "source \$HOME/.asdf/asdf.sh && asdf install terraform latest"
  su - $USER -c "source \$HOME/.asdf/asdf.sh && asdf global terraform latest"
 
+# git clone du projet 
+git clone https://github.com/KinkosPouet/pratique_cloud.git
+
 echo "SUCCESS"
+
 
