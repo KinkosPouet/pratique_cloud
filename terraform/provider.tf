@@ -18,7 +18,7 @@ provider "openstack" {
   domain_name = "default"                        # Toujours à "default" pour OVHcloud
   alias       = "ovh"                            # Un alias
 
-  region = "GRA5"
+  region = "SBG5"
 }
 
 provider "ovh" {

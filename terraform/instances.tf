@@ -5,8 +5,8 @@ resource "openstack_compute_keypair_v2" "provision_keypair" {
   public_key = file(var.ssh_public_key)
 }
 
-resource "openstack_compute_instance_v2" "mongo_gateways" {
-  count       = var.mongo_groups_count
+resource "openstack_compute_instance_v2" "tp_serveur" {
+  count       = var.machine_count
   name        = "server${count.index}" # Nom de l'instance
   provider    = openstack.ovh                # Nom du fournisseur
   image_name  = "Debian 11"                  # Nom de l'image
